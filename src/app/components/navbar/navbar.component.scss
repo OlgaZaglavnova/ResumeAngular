@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+    & a{
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            background-color: lightgrey;
+        }
+    }
+}

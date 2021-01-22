@@ -1,0 +1,16 @@
+.sertificates{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_card{
+        flex-basis: 25%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px dotted grey;
+        border-radius: 5px;
+        & img{
+            width: 100%;
+        }
+    }
+}

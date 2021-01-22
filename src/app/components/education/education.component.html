@@ -1,0 +1,17 @@
+<div class="education">
+    <div class="education_main">
+        <h3>Высшее</h3>
+        {{mainEducation.year}}<br>
+        {{mainEducation.institute}}<br>
+        {{mainEducation.faculty}}
+    </div>
+    <div class="education_additional">
+        <h3>Дополнительное</h3>
+        <div class="education_additional--p" *ngFor="let addEd of additionalEducation">
+            {{addEd.year}}<br>
+            {{addEd.institute}}<br>
+            {{addEd.courseName}}
+        </div>
+
+    </div>
+</div>
