@@ -1,0 +1,11 @@
+.app-container{
+    // padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 40px);
+    &_content{
+        flex-grow: 1;
+        padding: 20px;
+    }
+}

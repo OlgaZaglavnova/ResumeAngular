@@ -1,0 +1,25 @@
+<div class="portfolio">
+    <div class="portfolio_card" *ngFor="let pf of portfolio">
+        <div class="portfolio_card--img">
+            <img [src]="pf.src" alt="image">
+        </div>
+        <div class="portfolio_card--school">
+            {{pf.school}}
+        </div>
+        <div class="portfolio_card--course">
+            {{pf.course}}
+        </div>
+        <div class="portfolio_card--workName">
+            {{pf.workName}}
+        </div>
+        <div class="portfolio_card--demo">
+            <a [href]="pf.demolink" target="_blank">Демонстрация</a>
+        </div>
+        <div class="portfolio_card--code">
+            <a [href]="pf.codelink" target="_blank">Исходный код</a>
+        </div>
+        <div class="portfolio_card--comment">
+            {{pf.comment}}
+        </div>
+    </div>
+</div>
