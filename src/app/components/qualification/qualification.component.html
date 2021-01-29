@@ -1,8 +1,12 @@
 <div class="qualification">
     <div class="qualification_p" *ngFor="let qual of qualification">
-        {{qual.year}}<br>
+        <div class="qualification_p--year">
+            {{qual.year}}
+        </div>
         {{qual.company}}<br>
-        {{qual.companyLink}}<br>
+        <a [href]="qual.companyLink" target="_blank">
+            {{qual.companyLink}}<br>
+        </a>
         {{qual.city}}<br>
         {{qual.job}}<br>
         {{qual.duty}}<br>

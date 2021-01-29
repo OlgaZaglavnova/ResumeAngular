@@ -1,14 +1,20 @@
 <div class="education">
     <div class="education_main">
         <h3>Высшее</h3>
-        {{mainEducation.year}}<br>
-        {{mainEducation.institute}}<br>
-        {{mainEducation.faculty}}
+        <div class="education_p">
+            <div class="education_p--year">
+                {{mainEducation.year}}
+            </div>
+            {{mainEducation.institute}}<br>
+            {{mainEducation.faculty}}
+        </div>
     </div>
     <div class="education_additional">
         <h3>Дополнительное</h3>
-        <div class="education_additional--p" *ngFor="let addEd of additionalEducation">
-            {{addEd.year}}<br>
+        <div class="education_p" *ngFor="let addEd of additionalEducation">
+            <div class="education_p--year">
+                {{addEd.year}}
+            </div>
             {{addEd.institute}}<br>
             {{addEd.courseName}}
         </div>

@@ -17,10 +17,10 @@ export class SertificateComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params:Params) => {
-      console.log('SertificateComponent params=', params);
+      // console.log('SertificateComponent params=', params);
       this.id = +params.id;
       this.sertificate = this.dataService.getData().sertificates[this.id];
-      console.log('SertificateComponent sertificate=', this.sertificate);
+      // console.log('SertificateComponent sertificate=', this.sertificate);
     })
   }
 

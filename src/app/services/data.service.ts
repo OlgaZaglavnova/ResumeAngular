@@ -19,7 +19,7 @@ export class DataService{
     // }
 
     getData():any{
-        console.log('MyData=', myData);
+        // console.log('MyData=', myData);
         let tmpData:any = myData;
         return tmpData.default;
     }  
