@@ -7,7 +7,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { QualificationComponent } from './components/qualification/qualification.component';
 import { ScillsComponent } from './components/scills/scills.component';
 import { SertificatesComponent } from './components/sertificates/sertificates.component';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { SertificateComponent } from './components/sertificates/sertificate/sertificate.component';
 
 const routes: Routes = [

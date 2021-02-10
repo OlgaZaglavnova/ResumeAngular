@@ -19,6 +19,11 @@
         padding-left: 20px;
         flex-grow: 1;
     }
+    &_lang{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 @media screen and (max-width: 991px){
     .header{
@@ -29,6 +34,15 @@
                 height: 100%;
             }
         }
+        &_lang{
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            font-size: 11px;
+            height: 40px;
+            width: 110px;
+        }
     }
 }
 @media screen and (max-width: 576px){
@@ -37,6 +51,7 @@
         height: auto;
         text-align: center;
         justify-items: center;
+        position: relative;
         &_photo{
             flex-basis: 100%;
             text-align: center;

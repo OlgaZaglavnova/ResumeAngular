@@ -15,40 +15,41 @@
     <!-- <a class="navbar-brand"routerLink="/">
         <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
     </a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler myNavbar-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
+      <span class="myNavbar-btn-text">{{this.dataService.navBarPage}}</span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav myNavbar-ul">
-        <li class="nav-item active">
-            <a class="nav-link" routerLink="/">
+        <li class="nav-item active" (click)="selectHome()">
+            <a class="nav-link" routerLink="/" >
                 <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
                 <span class="sr-only">(current)</span>
                 </a> 
           </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about">Обо мне </a>
+        <li class="nav-item" (click)="selectAbout()">
+          <a class="nav-link" routerLink="/about">{{dataService.currentLang === 'ru' ? 'Обо мне' : 'About me'}} </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/education">Образование</a>
+        <li class="nav-item" (click)="selectEducation()">
+          <a class="nav-link" routerLink="/education">{{dataService.currentLang === 'ru' ? 'Образование' : 'Education'}}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/qualification">Опыт работы</a>
+        <li class="nav-item" (click)="selectQualification()">
+          <a class="nav-link" routerLink="/qualification">{{dataService.currentLang === 'ru' ? 'Опыт работы' : 'Experience'}}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/scills">Навыки</a>
+        <li class="nav-item" (click)="selectScills()">
+            <a class="nav-link" routerLink="/scills">{{dataService.currentLang === 'ru' ? 'Навыки' :'Scills'}}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/sertificates">Сертификаты</a>
+        <li class="nav-item" (click)="selectSertificates()">
+            <a class="nav-link" routerLink="/sertificates">{{dataService.currentLang === 'ru' ? 'Сертификаты' : 'Sertificates'}}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/portfolio">Портфолио</a>
+        <li class="nav-item" (click)="selectPortfolio()">
+            <a class="nav-link" routerLink="/portfolio">{{dataService.currentLang === 'ru' ? 'Портфолио' : 'Portfolio'}}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/contacts">Контакты</a>
+        <li class="nav-item" (click)="selectContacts()">
+            <a class="nav-link" routerLink="/contacts">{{dataService.currentLang === 'ru' ? 'Контакты' : 'Contacts'}}</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf" target="_blank">Версия для печати</a>
+        <li class="nav-item" (click)="hideNavbar()">
+            <a class="nav-link" [href]="dataService.printVersionFile" target="_blank">{{dataService.currentLang === 'ru' ? 'Версия для печати' : 'Print version'}}</a>
         </li>
       </ul>
     </div>

@@ -1,5 +1,5 @@
 <div class="portfolio">
-    <div class="portfolio_card" *ngFor="let pf of portfolio">
+    <div class="portfolio_card" *ngFor="let pf of dataService.getData().portfolio">
         <div class="portfolio_card--img">
             <img [src]="pf.src" alt="image">
         </div>
@@ -13,10 +13,10 @@
             {{pf.workName}}
         </div>
         <div class="portfolio_card--demo">
-            <a [href]="pf.demolink" target="_blank">Демонстрация</a>
+            <a [href]="pf.demolink" target="_blank">{{dataService.currentLang === 'ru' ? 'Демонстрация' : 'Demonstration'}}</a>
         </div>
         <div class="portfolio_card--code">
-            <a [href]="pf.codelink" target="_blank">Исходный код</a>
+            <a [href]="pf.codelink" target="_blank">{{dataService.currentLang === 'ru' ? 'Исходный код':'Source code'}}</a>
         </div>
         <div class="portfolio_card--comment">
             {{pf.comment}}

@@ -1,5 +1,5 @@
 <div class="scills">
-    <div class="scills_p" *ngFor="let scill of scills">
+    <div class="scills_p" *ngFor="let scill of dataService.getData().mainScills">
         {{scill}}
     </div>
 </div>

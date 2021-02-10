@@ -4,14 +4,22 @@
     </div>
     <div class="header_info">
         <h2 class="header_info--name">{{data.name}}</h2>
-        <p class="header_info--bdate"><small class="header_info--bdatelabel">Дата рождения:</small>
+        <p class="header_info--bdate"><small class="header_info--bdatelabel">{{dataService.currentLang === 'ru' ? 'День рождения:' : 'Birthdate:'}}</small>
         {{data.birthdate}}</p>
         <div>
-            <p><small>Желаемая должность:</small> {{data.wishJob.name}}</p>
-            <p><small>Опыт работы:</small> {{data.wishJob.experience}}</p>
-            <p><small>Занятость:</small> {{data.wishJob.workday}}</p>
-            <p><small>График работы:</small> {{data.wishJob.schedule}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Желаемая должность:' : 'Job:'}}</small> {{data.wishJob.name}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Опыт работы:' : 'Experience:'}}</small> {{data.wishJob.experience}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Занятость:' : 'Workday:'}}</small> {{data.wishJob.workday}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'График работы:' : 'Schedule:'}}</small> {{data.wishJob.schedule}}</p>
         </div>
     </div>
-    
+    <div class="header_lang">
+        <mat-form-field appearance="fill">
+            <mat-label>Language</mat-label>
+            <mat-select [(value)]="selectedLang">
+                <mat-option [value]="option.value" *ngFor="let option of langs" (click)="changeLang()">{{ option.viewValue }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+    </div>
 </div>

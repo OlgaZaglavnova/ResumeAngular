@@ -4,3 +4,7 @@ export interface aboutMe{
     gender: string,
     selfInformation: string
 }
+
+export interface dataType{
+    default?: any
+}

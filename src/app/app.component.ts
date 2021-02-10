@@ -11,6 +11,6 @@ export class AppComponent implements OnInit {
   constructor(private dataService: DataService){}
   ngOnInit(): void {
     let data = this.dataService.getData();
-    console.log('AppComponent data=', data);
+    // console.log('AppComponent data=', data);
   }
 }

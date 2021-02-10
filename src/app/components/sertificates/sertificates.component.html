@@ -1,5 +1,5 @@
 <div class="sertificates">
-    <div class="sertificates_card" *ngFor="let sertificate of sertificates; let i = index">
+    <div class="sertificates_card" *ngFor="let sertificate of dataService.getData().sertificates; let i = index">
         <a [routerLink]="['/sertificates', i]">
             <img [src]="sertificate.src" alt="sertificate image">
             <div class="sertificates_card--school">

@@ -32,7 +32,7 @@
         {
             "year": "ноябрь 2020-декабрь 2020",
             "institute": "Vladilen.ru",
-            "courseName": "Angular 9"
+            "courseName": "Angular 9. С нуля до профессионала"
         }
     ],
     "qualification": [
@@ -109,7 +109,7 @@
             "duty": "Разработка экранов процесса, экранных форм для SCADA-системы MicroSCADA, разработка приложений для SCADA-системы MicroSCADA, MS Office на встроенном языке программирования SCIL, языках программирования VB, VBA."
         }
     ],
-    "mainScills": ["Опыт программирования на C#, VB, VBA", "HTML5", "CSS3", "JavaScript", "VueJS", "ReactJS", "REDUX", "Angular", "Bootstrap", "LESS, SASS, SCSS", "Git", "SQL", "Gulp, Webpack по документации и примерам"],
+    "mainScills": ["Опыт программирования на C#, VB, VBA", "HTML5", "CSS3", "JavaScript", "VueJS", "ReactJS", "REDUX", "Angular", "Bootstrap", "LESS, SASS, SCSS", "Git", "SQL", "Gulp, Webpack"],
     "languages": {
         "russian": "Русский (родной)",
         "english": "Английский (pre-intermidiate)"
@@ -142,7 +142,7 @@
        },
        {
            "school": "GeekBrains",
-           "fullName": "Занимательные элементы интерфейса в HTML/CSS",
+           "fullName": "Git. Базовый курс",
            "date": "26 марта 2020г.",
            "description": [],
            "src": "../../../assets/img/sertificates/GitBase.webp"
@@ -321,6 +321,13 @@
             "date": "23 ноября 2015г.",
             "description": [],
             "src": "../../../assets/img/sertificates/Git_quickStart.webp"
+        },
+        {
+            "school": "GeekBrains",
+            "fullName": "PHP. Личный блог",
+            "date": "17 ноября 2015г.",
+            "description": [],
+            "src": "../../../assets/img/sertificates/Php_blog.webp"
         },
         {
             "school": "Школа технологий бизнеса",

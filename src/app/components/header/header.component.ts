@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 import { DataService } from 'src/app/services/data.service';
+
+/** Error when invalid control is dirty, touched, or submitted. */
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-header',
@@ -8,11 +18,27 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class HeaderComponent implements OnInit {
 
+  langs = [{value: 'ru', viewValue: 'Русский'}, {value: 'en', viewValue: 'English'}];
+  selectedLang = this.langs[0].value;
   data;
+
+
+  nativeSelectFormControl = new FormControl('valid', [
+    Validators.required,
+    Validators.pattern('valid'),
+  ]);
+
+  matcher = new MyErrorStateMatcher();
 
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
+    this.data = this.dataService.getData();
+  }
+
+  changeLang(){
+    this.dataService.currentLang = this.selectedLang;
+    this.dataService.updateData();
     this.data = this.dataService.getData();
   }
 

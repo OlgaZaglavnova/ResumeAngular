@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,8 +19,9 @@ import { ScillsComponent } from './components/scills/scills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SertificatesComponent } from './components/sertificates/sertificates.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ContactsComponent } from './contacts/contacts.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { SertificateComponent } from './components/sertificates/sertificate/sertificate.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import { SertificateComponent } from './components/sertificates/sertificate/sert
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

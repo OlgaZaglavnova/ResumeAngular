@@ -1,0 +1,412 @@
+{
+    "name": "Olga Zaglavnova",
+    "birthdate": "15 January 1979",
+    "wishJob": {
+        "name": "Frontend-developer",
+        "experience": "Junior",
+        "workday": "Part time, full time",
+        "schedule": "Flexible schedule, full day, remote working"
+        },
+    "aboutMe": {
+        "city": "Cheboksary",
+        "citizen": "Russian Federation",
+        "gender": "female",
+        "selfInformation": "I try to make good everithing I do"
+    },
+    "mainEducation": {
+        "year": "1996-2001",
+        "institute": "Chuvash State University, Cheboksary",
+        "faculty": "Informatics and computing faculty. Programmer"
+    },
+    "additionalEducation": [
+        {
+            "year": "2013",
+            "institute": "Business technology school",
+            "courseName": "Training. Business Technologies School, Management competence development. Effective leader's tools."
+        },
+        {
+            "year": "2019 August - 2020 June",
+            "institute": "GeekBrains",
+            "courseName": "Frontend developer"
+        },
+        {
+            "year": "2020 November - 2020 December",
+            "institute": "Vladilen.ru",
+            "courseName": "Angular 9. From beginner upto professional"
+        }
+    ],
+    "qualification": [
+        {
+            "year": "2019 November - present",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "System Integration department. Main specialist",
+            "duty": "Technical and commercial offers development"
+        },
+        {
+            "year": "2016 September — 2019 November, 3 years 2 months",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "Maternity leave",
+            "duty": "Baby care"
+        },
+        {
+            "year": "2015 April — 2016 September, 1 year 6 months",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "System Integration department. Main specialist",
+            "duty": "Technical and commercial offers development"
+        },
+        {
+            "year": "2013 November — 2015 April, 1 year 6 months",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "Preproject preparing group leader",
+            "duty": "Preproject group work organization, tasks statement, tasks accomplishing monitoring and management, technical and commercial offers checking and development"
+        },
+        {
+            "year": "2008 July — 2013 November, 5 years 5 months",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "System Integration department. High engineer",
+            "duty": "SCADA-system SPRECON process screens and forms development, Automation System operation documentation development, SCADA SPRECON and MS Office applications development using VB, VBA, C#."
+        },
+        {
+            "year": "2005 September — 2008 July, 2 years 11 months",
+            "company": "RTSoft Group of Companies",
+            "city": "Cheboksary",
+            "companyLink": "http://rtsoft.ru",
+            "job": "Engineer",
+            "duty": "Automation System technical and commercial offers development"
+        },
+        {
+            "year": "2005 January — 2005 September, 9 months",
+            "company": " ABB Automation LLC",
+            "companyLink": "http://new.abb.com/ru",
+            "city": "Cheboksary",
+            "job": "Automation Systems Engineering R&D Center. Engineer",
+            "duty": "MicroSCADA process screens and forms development; MicroSCADA and MS Office applications development using SCIL, VB, VBA programming languages."
+        },
+        {
+            "year": "2003 January — 2004 December, 2 years",
+            "company": "MKN Company LLC",
+            "companyLink": "",
+            "city": "Cheboksary",
+            "job": "Engineer",
+            "duty": "MicroSCADA process screens and forms development; MicroSCADA and MS Office applications development using SCIL, VB, VBA programming languages."
+        },
+        {
+            "year": "2002 August — 2002 December, 5 months",
+            "company": "ABB Automation LLC",
+            "companyLink": "http://new.abb.com/ru",
+            "city": "Cheboksary",
+            "job": "Automation Systems Engineering R&D Center. Engineer",
+            "duty": "MicroSCADA process screens and forms development; MicroSCADA and MS Office applications development using SCIL, VB, VBA programming languages."
+        }
+    ],
+    "mainScills": ["C#, VB, VBA programming experience", "HTML5", "CSS3", "JavaScript", "VueJS", "ReactJS", "REDUX", "Angular", "Bootstrap", "LESS, SASS, SCSS", "Git", "SQL", "Gulp, Webpack"],
+    "languages": {
+        "russian": "Russian (native)",
+        "english": "English (pre-intermidiate)"
+    },
+    "car": "Driver license B, driving experience since 2008 year.",
+    "contacts": {
+        "phone": "+7 (905) 346-52-75",
+        "icq": "195036360",
+        "skype": "smirnova.olga.1979",
+        "email": "olga.zaglavnova@mail.ru",
+        "vk": "@OlgaZaglavnova"
+    },
+    "tests":[
+        
+    ],
+    "sertificates":[
+        {
+          "school": "Vladilen.ru",
+          "fullName": "Angular 9. From beginner upto professional",
+          "date": "December 29, 2020",
+          "description": [],
+          "src": "../../../assets/img/sertificates/Angular9_OlgaZaglavnova_29-12-2020.webp"
+      },
+        {
+           "school": "GeekBrains",
+           "fullName": "Frontend developer",
+           "date": "May 30, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/FrontendDeveloper_OlgaZaglavnova.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Git base course",
+           "date": "March 26, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/GitBase.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Entertaining interface elements in HTML/CSS",
+           "date": "March 20, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/InterfaceElementsHTMLCSS.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "ReactJS",
+           "date": "March 4, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/ReactJS.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Landing page layout by HTML5",
+           "date": "February 10, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/LandingPage_HTML5.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Gulp automation",
+           "date": "January 14, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Gulp.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Sites layout using an example of Landing Page",
+           "date": "January 13, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/LandingPage.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "JavaScript. Level 2",
+           "date": "January 10, 2020",
+           "description": [],
+           "src": "../../../assets/img/sertificates/JavaScript2.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Database basics",
+           "date": "December 12, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/DB_base.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "English for IT",
+           "date": "December 2, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/EnglishForIT.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "JavaScript. Level 1",
+           "date": "November 18, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/JavaScript1.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "How to become a programmer",
+           "date": "October 22, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/ToBeProgrammer.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "HTML5 and CSS3",
+           "date": "October 19, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/HTML_CSS_2.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "HTML&CSS",
+           "description": ["Using blocks",
+               "HTML forms",
+               "HTML tags and attributes",
+               "HTML and CSS basics",
+               "CSS selectors",
+               "Working with text and tables"
+           ],
+           "date": "September 3, 2019",
+           "src": "../../../assets/img/tests/test_HTML_CSS.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "HTML/CSS. Interactive course",
+           "date": "September 2, 2019",
+           "description": [],
+           "src": "../../../assets/img/sertificates/HTML_CSS_1.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Web-development. Quick start",
+           "date": "August 16, 2018",
+           "description": [],
+           "src": "../../../assets/img/sertificates/WebDev_quickStart.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "How to create a personal blog: course 'Wordpress blog creating'",
+           "date": "February 26, 2016",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Wordpress.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Android. Quick start",
+           "date": "February 17, 2016",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Android.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "C#. Quiz show 'Guess the melody'",
+           "date": "January 26, 2016",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Csharp_vict.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Programming basics",
+           "description": ["Programming basics",
+               "Operators and functions",
+               "Task setting and algorithming",
+               "Basic concepts"],
+           "date": "January 25, 2016",
+           "src": "../../../assets/img/tests/test_ProgrammingBase.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "C#",
+           "description": ["Collections",
+               "Microsoft .net framework and visual studio .net environment",
+               "Working with file system and file data input-output",
+               "C# basic concepts and operators",
+               "Classes and objects",
+               "Arrays, symbols and strings"],
+           "date": "25 января 2016г.",
+           "src": "../../../assets/img/tests/test_Csharp.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "Programming basics",
+           "date": "December 8, 2015",
+           "description": [],
+           "src": "../../../assets/img/sertificates/ProgrammingBase.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "С#. Mini-programs",
+           "date": "December 1, 2015",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Csharp_mini.webp"
+       },
+       {
+           "school": "GeekBrains",
+           "fullName": "OOP Basics",
+           "date": "November 27, 2015",
+           "description": [],
+           "src": "../../../assets/img/sertificates/Oop_base.webp"
+       },
+        {
+            "school": "GeekBrains",
+            "fullName": "Git. Quick start",
+            "date": "November 23, 2015",
+            "description": [],
+            "src": "../../../assets/img/sertificates/Git_quickStart.webp"
+        },
+        {
+            "school": "GeekBrains",
+            "fullName": "PHP. Personal blog",
+            "date": "November 17, 2015",
+            "description": [],
+            "src": "../../../assets/img/sertificates/Php_blog.webp"
+        },
+        {
+            "school": "Business technology school",
+            "fullName": "Management competence development. Effective leader's tools",
+            "date": "December 13-14, 2013",
+            "description": [],
+            "src": "../../../assets/img/sertificates/EffectiveLeader.webp"
+        },
+        {
+            "school": "Quality systems Institute, Ekaterinburg",
+            "fullName": "QMS basics and process approach according to ISO 9001-2008",
+            "date": "February 24, 2011",
+            "description": [],
+            "src": "../../../assets/img/sertificates/ISO9001.jpg"
+        }
+    ],
+    "portfolio": [
+        {
+            "school": "GeekBrains",
+            "course": "HTML/CSS. Interactive course",
+            "workName": "Page layout",
+            "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS1_lesson8",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS1_lesson8",
+            "src":"../../../assets/img/portfolio/HTMLCSS1_ht8.png",
+            "comment": "Menu Home, Products and Products/Home are working"
+        },
+        {
+            "school": "GeekBrains",
+            "course": "HTML5 and CSS3",
+            "workName": "Page layout",
+            "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS2_lesson6/",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS2_lesson6",
+            "src":"../../../assets/img/portfolio/HTMLCSS2_ht6.png",
+            "comment": "Transform effects implements on mouse over"
+        },
+        {
+            "school": "GeekBrains",
+            "course": "HTML5 and CSS3",
+            "workName": "Page layout",
+            "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS2_lesson8/",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS2_lesson8",
+            "src":"../../../assets/img/portfolio/HTMLCSS2_ht8.png",
+            "comment":"" 
+        },
+        {
+            "school": "GeekBrains",
+            "course": "JavaScript. Level 1",
+            "workName": "Animated modal window",
+            "demolink": "https://olgazaglavnova.github.io/hometask5task3/",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task3",
+            "src":"../../../assets/img/portfolio/JS1_ht5t3.png",
+            "comment": "Press the button 'Open modal window'"
+        },
+        {
+            "school": "GeekBrains",
+            "course": "JavaScript. Level 1",
+            "workName": "Good cards",
+            "demolink": "https://olgazaglavnova.github.io/hometask5task4/",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task4",
+            "src":"../../../assets/img/portfolio/JS1_ht5t4.png",
+            "comment": "Good text information displays on press button 'Подробнее', good picture comes back on press button 'Отмена'"
+        },
+        {
+            "school": "GeekBrains",
+            "course": "JavaScript. Level 1",
+            "workName": "Chess board",
+            "demolink": "https://olgazaglavnova.github.io/hometask5task5_6/",
+            "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task5_6",
+            "src":"../../../assets/img/portfolio/JS1_ht5t6.png",
+            "comment": "Chess figures are setting onto the chess board if press button 'Расставить фигуры'"
+        },
+        {
+            "school": "",
+            "course": "React Native test task example",
+            "workName": "Test task for Android, written using React Native",
+            "demolink": "https://yadi.sk/d/tsg7XvOzdtlmrw",
+            "codelink":"https://github.com/OlgaZaglavnova/Bokus-Test2",
+            "src":"../../../assets/img/portfolio/bokus2.png",
+            "comment": "You should download file 'olgazaglavnova-testTwo.apk' to android-device and set the application to view it"
+        }
+    ]
+}

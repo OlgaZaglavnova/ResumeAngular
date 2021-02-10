@@ -19,13 +19,21 @@
             }
         }
     }
+    &-btn{
+        width: 100%;
+        text-align: left;
+        &-text{
+            padding-left: 20px;
+        }
+    }
 }
-// @media screen and (max-width: 991px){
-//     .myNavbar{
-//         // position: absolute;
-//         // top:0px;
-//         // right: 0px;
-//         // width: 100%;
-//     }
 
-// }
+@media screen and (max-width: 991px){
+    .myNavbar{
+        position: fixed;
+        top:0px;
+        right: 0px;
+        width: 100%;
+    }
+
+}

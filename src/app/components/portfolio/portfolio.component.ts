@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,10 +9,16 @@ import { DataService } from '../../services/data.service';
 })
 export class PortfolioComponent implements OnInit {
   portfolio;
-  constructor(private dataService: DataService) { }
+  constructor(
+    public dataService: DataService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
     this.portfolio = this.dataService.getData().portfolio;
+    if (!this.portfolio){
+      this.router.navigate(['/']);
+    }
   }
 
 }

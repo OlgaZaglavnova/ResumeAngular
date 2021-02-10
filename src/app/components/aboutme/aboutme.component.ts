@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -7,15 +8,25 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./aboutme.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-  aboutMe;
-  car;
-  languages;
-  constructor(private dataService: DataService) { }
+
+  constructor(
+    public dataService: DataService,
+    private router: Router
+    ) { }
+ 
 
   ngOnInit(): void {
-    this.aboutMe = this.dataService.getData().aboutMe;
-    this.car = this.dataService.getData().car;
-    this.languages = this.dataService.getData().languages;
+    this.uploadData()
+
   }
+
+  uploadData(){
+    let tmpData = this.dataService.getData();
+    if(!tmpData){
+      this.router.navigate(['/']);
+    } 
+  }
+
+
 
 }
