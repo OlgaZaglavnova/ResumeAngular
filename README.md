@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
-<a>https://olgazaglavnova.github.io/ResumeAngular/</a>
+<a target="_blank">https://olgazaglavnova.github.io/ResumeAngular/</a>
 
 ## Development server
 
