@@ -33,9 +33,30 @@
             "year": "ноябрь 2020-декабрь 2020",
             "institute": "Vladilen.ru",
             "courseName": "Angular 9. С нуля до профессионала"
+        },
+        {
+            "year": "апрель 2021-май 2021",
+            "institute": "udemy.com",
+            "courseName": "Python + Django: с нуля до коммерческих приложений"
         }
     ],
     "qualification": [
+        {
+            "year": "май 2021 - настоящее время",
+            "company": "ООО Центр повышения эффективности",
+            "city": "Москва",
+            "companyLink": "",
+            "job": "Frontend-разработчик junior",
+            "duty": "Разработка новых функций, корректировка ошибок"
+        },
+        {
+            "year": "февраль 2021 - май 2021",
+            "company": "ООО Центр повышения эффективности",
+            "city": "Москва",
+            "companyLink": "",
+            "job": "Frontend-разработчик стажер",
+            "duty": "Разработка новых функций, корректировка ошибок"
+        },
         {
             "year": "ноябрь 2019 - настоящее время",
             "company": "РТСофт, ЗАО",
@@ -126,6 +147,13 @@
         
     ],
     "sertificates":[
+      {
+          "school": "udemy.com",
+          "fullName": "Python + Django: с нуля до коммерческих приложений",
+          "date": "28 мая 2021г.",
+          "description": [],
+          "src": "../../../assets/img/sertificates/Udemy_Python-Django_28-05-2021.jpg"
+      },
         {
           "school": "Vladilen.ru",
           "fullName": "Angular 9. С нуля до профессионала",
