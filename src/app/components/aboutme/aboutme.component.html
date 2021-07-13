@@ -1,26 +1,26 @@
 <div class="aboutme">
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'Место жительства:' : 'City:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().aboutMe.city}}</div>
+        <div class="aboutme_p--value">{{aboutMe?.city}}</div>
     </div>
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'Гражданство:' : 'Citizen:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().aboutMe.citizen}}</div>
+        <div class="aboutme_p--value">{{aboutMe?.citizen}}</div>
     </div>
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'Пол:' : 'Gender:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().aboutMe.gender}}</div>
+        <div class="aboutme_p--value">{{aboutMe?.gender}}</div>
     </div>
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'О себе:' : 'About me:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().aboutMe.selfInformation}}</div>
+        <div class="aboutme_p--value">{{aboutMe?.selfInformation}}</div>
     </div>
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'Языки:' : 'Languages:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().languages.russian}}<br>{{dataService.getData().languages.english}}</div>
+        <div class="aboutme_p--value">{{languages?.russian}}<br>{{languages?.english}}</div>
     </div>
     <div class="aboutme_p">
         <div class="aboutme_p--title">{{dataService.currentLang === 'ru' ? 'Авто:' : 'Car:'}}</div>
-        <div class="aboutme_p--value">{{dataService.getData().car}}</div>
+        <div class="aboutme_p--value">{{car}}</div>
     </div>
 </div>

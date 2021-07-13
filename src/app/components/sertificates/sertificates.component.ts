@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { combineLatest } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -15,13 +17,14 @@ export class SertificatesComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    // let data = this.dataService.getData();
-    // if (data.sertificates){
-      this.sertificates = this.dataService.getData().sertificates;
-      if (this.sertificates.length === 0){
-        this.router.navigate(['/'])
-      }
-    // }
+    combineLatest([this.dataService.getData()])
+      .pipe(take(1))
+      .subscribe(([data]) => {
+        this.sertificates = data.sertificates;
+        if (this.sertificates.length === 0){
+          this.router.navigate(['/']);
+        }
+      });
   }
 
 }

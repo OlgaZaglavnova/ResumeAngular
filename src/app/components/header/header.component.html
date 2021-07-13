@@ -3,14 +3,14 @@
         <img class="header_photo--img" src="../../../assets/img/IMG_20200915_074724.jpg" alt="my photo">
     </div>
     <div class="header_info">
-        <h2 class="header_info--name">{{data.name}}</h2>
-        <p class="header_info--bdate"><small class="header_info--bdatelabel">{{dataService.currentLang === 'ru' ? 'День рождения:' : 'Birthdate:'}}</small>
-        {{data.birthdate}}</p>
+        <h2 class="header_info--name">{{data?.name}}</h2>
+        <p class="header_info--bdate"><small class="header_info--bdatelabel">{{dataService.currentLang === 'ru' ? 'Дата рождения:' : 'Birthdate:'}}</small>
+        {{data?.birthdate}}</p>
         <div>
-            <p><small>{{dataService.currentLang === 'ru' ? 'Желаемая должность:' : 'Job:'}}</small> {{data.wishJob.name}}</p>
-            <p><small>{{dataService.currentLang === 'ru' ? 'Опыт работы:' : 'Experience:'}}</small> {{data.wishJob.experience}}</p>
-            <p><small>{{dataService.currentLang === 'ru' ? 'Занятость:' : 'Workday:'}}</small> {{data.wishJob.workday}}</p>
-            <p><small>{{dataService.currentLang === 'ru' ? 'График работы:' : 'Schedule:'}}</small> {{data.wishJob.schedule}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Желаемая должность:' : 'Job:'}}</small> {{data?.wishJob.name}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Опыт работы:' : 'Experience:'}}</small> {{data?.wishJob.experience}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'Занятость:' : 'Workday:'}}</small> {{data?.wishJob.workday}}</p>
+            <p><small>{{dataService.currentLang === 'ru' ? 'График работы:' : 'Schedule:'}}</small> {{data?.wishJob.schedule}}</p>
         </div>
     </div>
     <div class="header_lang">

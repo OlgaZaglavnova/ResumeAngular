@@ -45,7 +45,7 @@ import { SertificateComponent } from './components/sertificates/sertificate/sert
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

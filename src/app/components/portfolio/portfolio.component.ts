@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { combineLatest } from 'rxjs';
+import { take } from 'rxjs/operators';
+import { Portfolio } from 'src/app/models/data.model';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,17 +11,21 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  portfolio;
+  portfolio: Portfolio[];
   constructor(
     public dataService: DataService,
     private router: Router
-    ) { }
+    ) {}
 
   ngOnInit(): void {
-    this.portfolio = this.dataService.getData().portfolio;
-    if (!this.portfolio){
-      this.router.navigate(['/']);
-    }
+    combineLatest([this.dataService.getData()])
+      .pipe(take(1))
+      .subscribe(([data]) => {
+        this.portfolio = data.portfolio;
+        if (!this.portfolio){
+          this.router.navigate(['/']);
+        }
+      });
   }
 
 }

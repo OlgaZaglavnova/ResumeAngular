@@ -3,20 +3,20 @@
         <h3>{{dataService.currentLang === 'ru' ? 'Высшее': 'Highest'}}</h3>
         <div class="education_p">
             <div class="education_p--year">
-                {{dataService.getData().mainEducation.year}}
+                {{mainEducation?.year}}
             </div>
-            {{dataService.getData().mainEducation.institute}}<br>
-            {{dataService.getData().mainEducation.faculty}}
+            {{mainEducation?.institute}}<br>
+            {{mainEducation?.faculty}}
         </div>
     </div>
     <div class="education_additional">
         <h3>{{dataService.currentLang === 'ru' ? 'Дополнительное': 'Additional'}}</h3>
-        <div class="education_p" *ngFor="let addEd of dataService.getData().additionalEducation">
+        <div class="education_p" *ngFor="let addEd of additionalEducation">
             <div class="education_p--year">
-                {{addEd.year}}
+                {{addEd?.year}}
             </div>
-            {{addEd.institute}}<br>
-            {{addEd.courseName}}
+            {{addEd?.institute}}<br>
+            {{addEd?.courseName}}
         </div>
 
     </div>

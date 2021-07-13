@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { take } from 'rxjs/operators';
+import { Data } from './models/data.model';
 import { DataService } from './services/data.service';
 
 @Component({
@@ -7,10 +10,18 @@ import { DataService } from './services/data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  // title = 'myResume';
+  title = 'myResume';
+  data$: Observable<any>;
+  data: Data;
+
   constructor(private dataService: DataService){}
+
   ngOnInit(): void {
-    let data = this.dataService.getData();
-    // console.log('AppComponent data=', data);
+    this.data$ = this.dataService.getData();
+    this.data$
+      .pipe(take(1))
+      .subscribe(data => {
+        this.data = data;
+      });
   }
 }

@@ -1,15 +1,15 @@
 <div class="sertificates">
-    <div class="sertificates_card" *ngFor="let sertificate of dataService.getData().sertificates; let i = index">
+    <div class="sertificates_card" *ngFor="let sertificate of sertificates; let i = index">
         <a [routerLink]="['/sertificates', i]">
-            <img [src]="sertificate.src" alt="sertificate image">
+            <img [src]="sertificate ? sertificate.src : '#'" alt="sertificate image">
             <div class="sertificates_card--school">
-                {{sertificate.school}}
+                {{sertificate?.school}}
             </div>
             <div class="sertificates_card--date">
-                {{sertificate.date}}
+                {{sertificate?.date}}
             </div>
             <div class="sertificates_card--fullName">
-                {{sertificate.fullName}}
+                {{sertificate?.fullName}}
             </div>
         </a>
 

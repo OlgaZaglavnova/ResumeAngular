@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { combineLatest } from 'rxjs';
+import { take } from 'rxjs/operators';
+import { Contact } from 'src/app/models/data.model';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,17 +10,15 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-  contacts;
-  constructor(
-    public dataService: DataService,
-    private router: Router
-    ) { }
+  contacts: Contact;
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.contacts = this.dataService.getData().contacts;
-    if (!this.contacts){
-      this.router.navigate(['/']);
-    }
+    combineLatest([this.dataService.getData()])
+      .pipe(take(1))
+      .subscribe(([data]) => {
+        this.contacts = data.contacts;
+      });
   }
-
 }
+

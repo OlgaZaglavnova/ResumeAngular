@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { combineLatest } from 'rxjs';
+import { take, withLatestFrom } from 'rxjs/operators';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -16,12 +18,14 @@ export class SertificateComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe((params:Params) => {
-      // console.log('SertificateComponent params=', params);
-      this.id = +params.id;
-      this.sertificate = this.dataService.getData().sertificates[this.id];
-      // console.log('SertificateComponent sertificate=', this.sertificate);
-    })
+    combineLatest([this.dataService.getData(), this.route.params])
+      .pipe(
+        take(1),
+      )
+      .subscribe(([data, params]) => {
+        this.id = +params.id;
+        this.sertificate = data.sertificates[this.id];
+    });
   }
 
 }

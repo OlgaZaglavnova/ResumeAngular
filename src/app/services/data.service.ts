@@ -1,42 +1,40 @@
-import { Injectable, OnInit } from "@angular/core";
-import { ActivatedRoute, Params } from "@angular/router";
-import * as myData  from '../../assets/myData.json';
-import * as myDataEn  from '../../assets/myDataEn.json';
-import { AboutmeComponent } from "../components/aboutme/aboutme.component";
+import { Injectable, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Data } from '../models/data.model';
+import { take } from 'rxjs/operators';
+// import * as myData from '../../assets/myData.json';
+// import * as myDataEn from '../../assets/myDataEn.json';
 
 @Injectable()
-export class DataService implements OnInit{
-   
+export class DataService {
     currentLang = 'ru';
     data: any;
-    printVersionFile = "../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf"
+    printVersionFile = '../../assets//printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf';
+    dataRuFile = '../../assets/myData.json';
+    dataEnFile = '../../assets/myDataEn.json';
     navBarPage = '';
     constructor(
-        private route: ActivatedRoute
-        ){}
+        private route: ActivatedRoute,
+        private http: HttpClient
+    ) { }
 
-    ngOnInit(){
-        this.updateData();
-    }
-    getData():any{
-        
-        let tmpData:any = this.currentLang === 'ru' ? myData : myDataEn;
-        // console.log('MyData=', tmpData);
-        return tmpData.default;
+    getData(): Observable<any> {
+        const path = this.currentLang === 'ru' ? this.dataRuFile : this.dataEnFile;
+        return this.http.get(path);
     }
 
-    updateData(){
-        this.data = this.getData();
-        this.printVersionFile = this.currentLang === 'ru' ? "../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf" : "../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume-En.pdf"
+    updateData(): void {
+        this.printVersionFile = this.currentLang === 'ru' ? '../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf' : '../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume-En.pdf';
         this.navBarPage = this.getNavBarTitle(this.navBarPage);
-        // console.log('dataService data = ',this.data)
     }
-    getNavBarTitle(selectedPage: string): string{
+    getNavBarTitle(selectedPage: string): string {
         switch (selectedPage) {
-            case 'Обо мне' : 
+            case 'Обо мне':
                 return this.currentLang === 'ru' ? 'Обо мне' : 'About me';
                 break;
-            case 'About me' : 
+            case 'About me':
                 return this.currentLang === 'ru' ? 'Обо мне' : 'About me';
                 break;
             case 'Образование':
@@ -79,6 +77,6 @@ export class DataService implements OnInit{
                 return selectedPage;
                 break;
 
-       }
+        }
     }
 }

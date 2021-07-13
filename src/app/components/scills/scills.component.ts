@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { combineLatest } from 'rxjs';
+import { take } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,17 +10,21 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./scills.component.scss']
 })
 export class ScillsComponent implements OnInit {
-  scills;
+  scills: string;
   constructor(
     public dataService: DataService,
     private router: Router
     ) { }
 
   ngOnInit(): void {
-    this.scills = this.dataService.getData().mainScills;
-    if (!this.scills){
-      this.router.navigate(['/']);
-    }
+    combineLatest([this.dataService.getData()])
+      .pipe(take(1))
+      .subscribe(([data]) => {
+        this.scills = data.mainScills;
+        if (!this.scills){
+          this.router.navigate(['/']);
+        }
+      });
   }
 
 }

@@ -33,9 +33,30 @@
             "year": "2020 November - 2020 December",
             "institute": "Vladilen.ru",
             "courseName": "Angular 9. From beginner upto professional"
+        },
+        {
+            "year": "2021 April - 2021 May",
+            "institute": "udemy.com",
+            "courseName": " Python + Django: from start upto commercial applications"
         }
     ],
     "qualification": [
+        {
+            "year": "2021 May - present",
+            "company": "Efficiency raising center LLC",
+            "city": "Moscow",
+            "companyLink": "",
+            "job": "Frontend-developer junior",
+            "duty": "New features developing, bugs fixing"
+        },
+        {
+            "year": "2021 February - 2021 May",
+            "company": "Efficiency raising center LLC",
+            "city": "Moscow",
+            "companyLink": "",
+            "job": "Frontend-developer trainee",
+            "duty": "New features developing, bugs fixing"
+        },
         {
             "year": "2019 November - present",
             "company": "RTSoft Group of Companies",

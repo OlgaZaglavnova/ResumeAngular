@@ -8,53 +8,46 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class NavbarComponent implements OnInit {
   selectedPage = '';
-  
+
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
   }
 
-  hideNavbar(){
-    document.getElementById('navbarNav').classList.remove('show')
+  hideNavbar(): void {
+    document.getElementById('navbarNav').classList.remove('show');
 
   }
-  selectHome(){
+  selectHome(): void {
     this.selectedPage = '';
     this.hideNavbar();
   }
-  selectAbout(){
+  selectAbout(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Обо мне' : 'About me';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Обо мне' : 'About me';
     this.hideNavbar();
   }
-  selectEducation(){
+  selectEducation(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Образование' : 'Education';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Образование' : 'Education';
     this.hideNavbar();
   }
-  selectQualification(){
+  selectQualification(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Опыт работы' : 'Work experience';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Опыт работы' : 'Work experience';
     this.hideNavbar();
   }
-  selectScills(){
+  selectScills(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Навыки' : 'Scills';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Навыки' : 'Scills';
     this.hideNavbar();
   }
-  selectSertificates(){
+  selectSertificates(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Сертификаты' : 'Sertificates';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Сертификаты' : 'Sertificates';
     this.hideNavbar();
   }
-  selectPortfolio(){
+  selectPortfolio(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Портфолио' : 'Portfolio';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Портфолио' : 'Portfolio';
     this.hideNavbar();
   }
-  selectContacts(){
+  selectContacts(): void {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Контакты' : 'Contacts';
-    // this.selectedPage = this.dataService.currentLang === 'ru' ? 'Контакты' : 'Contacts';
     this.hideNavbar();
   }
 
