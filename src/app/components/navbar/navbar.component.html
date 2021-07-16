@@ -28,28 +28,28 @@
                 </a> 
           </li>
         <li class="nav-item" (click)="selectAbout()">
-          <a class="nav-link" routerLink="/about">{{dataService.currentLang === 'ru' ? 'Обо мне' : 'About me'}} </a>
+          <a class="nav-link" routerLink="/about">{{ "navbar.AboutMe" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectEducation()">
-          <a class="nav-link" routerLink="/education">{{dataService.currentLang === 'ru' ? 'Образование' : 'Education'}}</a>
+          <a class="nav-link" routerLink="/education">{{ "navbar.Education" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectQualification()">
-          <a class="nav-link" routerLink="/qualification">{{dataService.currentLang === 'ru' ? 'Опыт работы' : 'Experience'}}</a>
+          <a class="nav-link" routerLink="/qualification">{{ "navbar.Experience" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectScills()">
-            <a class="nav-link" routerLink="/scills">{{dataService.currentLang === 'ru' ? 'Навыки' :'Scills'}}</a>
+            <a class="nav-link" routerLink="/scills">{{ "navbar.Scills" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectSertificates()">
-            <a class="nav-link" routerLink="/sertificates">{{dataService.currentLang === 'ru' ? 'Сертификаты' : 'Sertificates'}}</a>
+            <a class="nav-link" routerLink="/sertificates">{{ "navbar.Sertificates" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectPortfolio()">
-            <a class="nav-link" routerLink="/portfolio">{{dataService.currentLang === 'ru' ? 'Портфолио' : 'Portfolio'}}</a>
+            <a class="nav-link" routerLink="/portfolio">{{ "navbar.Portfolio" | translate }}</a>
         </li>
         <li class="nav-item" (click)="selectContacts()">
-            <a class="nav-link" routerLink="/contacts">{{dataService.currentLang === 'ru' ? 'Контакты' : 'Contacts'}}</a>
+            <a class="nav-link" routerLink="/contacts">{{ "navbar.Contacts" | translate }}</a>
         </li>
         <li class="nav-item" (click)="hideNavbar()">
-            <a class="nav-link" [href]="dataService.printVersionFile" target="_blank">{{dataService.currentLang === 'ru' ? 'Версия для печати' : 'Print version'}}</a>
+            <a class="nav-link" [href]="printVersionFile" target="_blank">{{ "navbar.PrintVersion" | translate }}</a>
         </li>
       </ul>
     </div>

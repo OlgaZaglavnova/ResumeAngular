@@ -1,17 +1,17 @@
 <div class="education">
     <div class="education_main">
-        <h3>{{dataService.currentLang === 'ru' ? 'Высшее': 'Highest'}}</h3>
+        <h3>{{ "education.Highest" | translate }}</h3>
         <div class="education_p">
             <div class="education_p--year">
-                {{mainEducation?.year}}
+                {{data?.mainEducation.year}}
             </div>
-            {{mainEducation?.institute}}<br>
-            {{mainEducation?.faculty}}
+            {{data?.mainEducation.institute}}<br>
+            {{data?.mainEducation.faculty}}
         </div>
     </div>
     <div class="education_additional">
-        <h3>{{dataService.currentLang === 'ru' ? 'Дополнительное': 'Additional'}}</h3>
-        <div class="education_p" *ngFor="let addEd of additionalEducation">
+        <h3>{{ "education.Additional" | translate }}</h3>
+        <div class="education_p" *ngFor="let addEd of data?.additionalEducation">
             <div class="education_p--year">
                 {{addEd?.year}}
             </div>

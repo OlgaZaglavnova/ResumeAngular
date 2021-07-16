@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { combineLatest } from 'rxjs';
-import { take } from 'rxjs/operators';
-import { Portfolio } from 'src/app/models/data.model';
+import { TranslateService } from '@ngx-translate/core';
+import { combineLatest, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -10,22 +10,33 @@ import { DataService } from '../../services/data.service';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit {
-  portfolio: Portfolio[];
+export class PortfolioComponent implements OnInit, OnDestroy {
+  data: any;
+  private destroyed$ = new Subject();
+
   constructor(
     public dataService: DataService,
-    private router: Router
-    ) {}
+    private router: Router,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
-    combineLatest([this.dataService.getData()])
-      .pipe(take(1))
-      .subscribe(([data]) => {
-        this.portfolio = data.portfolio;
-        if (!this.portfolio){
-          this.router.navigate(['/']);
-        }
-      });
+    combineLatest([
+      this.dataService.currentLang$,
+      this.dataService.dataRu$,
+      this.dataService.dataEn$
+    ])
+    .pipe(takeUntil(this.destroyed$))
+    .subscribe(([currentLang, dataRu, dataEn]) => {
+      this.data = currentLang === 'ru'
+        ? dataRu
+        : dataEn;
+    });
+    this.dataService.currentLang$.next(this.translate.currentLang);
   }
 
+  ngOnDestroy(): void {
+    this.destroyed$.next(null);
+    this.destroyed$.complete();
+  }
 }

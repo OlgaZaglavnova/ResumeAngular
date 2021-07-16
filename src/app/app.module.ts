@@ -18,10 +18,15 @@ import { QualificationComponent } from './components/qualification/qualification
 import { ScillsComponent } from './components/scills/scills.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SertificatesComponent } from './components/sertificates/sertificates.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { SertificateComponent } from './components/sertificates/sertificate/sertificate.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
+  return new TranslateHttpLoader(http, './assets/locale/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -46,6 +51,14 @@ import { SertificateComponent } from './components/sertificates/sertificate/sert
     MatIconModule,
     HttpClientModule,
     MatSelectModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      useDefaultLang: false,
+    })
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

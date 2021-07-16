@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -6,12 +8,27 @@ import { DataService } from 'src/app/services/data.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, OnDestroy {
   selectedPage = '';
+  printVersionFile = '#';
+
+  private destroyed$ = new Subject();
 
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
+    this.dataService.currentLang$
+      .pipe(takeUntil(this.destroyed$))
+      .subscribe(currentLang => {
+        this.printVersionFile = currentLang === 'ru'
+          ? this.dataService.printVersionFileRu
+          : this.dataService.printVersionFileEn;
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.destroyed$.next(null);
+    this.destroyed$.complete();
   }
 
   hideNavbar(): void {
@@ -30,11 +47,11 @@ export class NavbarComponent implements OnInit {
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Образование' : 'Education';
     this.hideNavbar();
   }
-  selectQualification(): void {
+  selectQualification(): void{
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Опыт работы' : 'Work experience';
     this.hideNavbar();
   }
-  selectScills(): void {
+  selectScills(): void{
     this.dataService.navBarPage = this.dataService.currentLang === 'ru' ? 'Навыки' : 'Scills';
     this.hideNavbar();
   }

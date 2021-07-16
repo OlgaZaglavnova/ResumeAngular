@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { combineLatest } from 'rxjs';
-import { take } from 'rxjs/operators';
-import { Contact } from 'src/app/models/data.model';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { combineLatest, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -9,16 +10,33 @@ import { DataService } from '../../services/data.service';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss']
 })
-export class ContactsComponent implements OnInit {
-  contacts: Contact;
-  constructor(private dataService: DataService) { }
+export class ContactsComponent implements OnInit, OnDestroy {
+  data: any;
+  private destroyed$ = new Subject();
+
+  constructor(
+    public dataService: DataService,
+    public translate: TranslateService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    combineLatest([this.dataService.getData()])
-      .pipe(take(1))
-      .subscribe(([data]) => {
-        this.contacts = data.contacts;
-      });
+    combineLatest([
+      this.dataService.currentLang$,
+      this.dataService.dataRu$,
+      this.dataService.dataEn$
+    ])
+    .pipe(takeUntil(this.destroyed$))
+    .subscribe(([currentLang, dataRu, dataEn]) => {
+      this.data = currentLang === 'ru'
+        ? dataRu
+        : dataEn;
+    });
+    this.dataService.currentLang$.next(this.translate.currentLang);
+  }
+
+  ngOnDestroy(): void {
+    this.destroyed$.next(null);
+    this.destroyed$.complete();
   }
 }
-

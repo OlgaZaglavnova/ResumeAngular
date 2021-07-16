@@ -1,15 +1,12 @@
 <div>
     <div>
-        {{ dataService.currentLang === 'ru' 
-            ? 'К сожалению я не могу привести здесь все проекты над которыми я работала, т.к. мне не принадлежит право собственности на них.' 
-            : 'Unfortunately, I cannot cite here all the projects that I have worked on, because I do not own the ownership right to them.'
-        }}
+        {{ "homePage.UnfortunatelyDNA" | translate }}
     </div>
     <div class="portfolio">
 
-        <div class="portfolio_card" *ngFor="let pf of portfolio">
+        <div class="portfolio_card" *ngFor="let pf of data?.portfolio">
             <div class="portfolio_card--img">
-                <img [src]="pf ? pf.src : '#'" alt="image">
+                <img [src]="pf?.src" alt="image">
             </div>
             <div class="portfolio_card--school">
                 {{pf?.school}}
@@ -21,10 +18,10 @@
                 {{pf?.workName}}
             </div>
             <div class="portfolio_card--demo">
-                <a [href]="pf ? pf.demolink : '#'" target="_blank">{{dataService.currentLang === 'ru' ? 'Демонстрация' : 'Demonstration'}}</a>
+                <a [href]="pf?.demolink" target="_blank">{{ "portfolio.Demonstration" | translate }}</a>
             </div>
             <div class="portfolio_card--code">
-                <a [href]="pf ? pf.codelink : '#'" target="_blank">{{dataService.currentLang === 'ru' ? 'Исходный код':'Source code'}}</a>
+                <a [href]="pf?.codelink" target="_blank">{{ "portfolio.SourceCode" | translate }}</a>
             </div>
             <div class="portfolio_card--comment">
                 {{pf?.comment}}

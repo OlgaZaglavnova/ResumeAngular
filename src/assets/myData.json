@@ -3,7 +3,7 @@
     "birthdate": "15 января 1979г.",
     "wishJob": {
         "name": "Frontend-разработчик",
-        "experience": "Junior",
+        "experience": "до 1 года",
         "workday": "Частичная занятость, полная занятость, проектная работа",
         "schedule": "Удаленная работа, гибкий график, полный день"
         },
@@ -46,7 +46,7 @@
             "company": "ООО Центр Повышения эффективности",
             "city": "Москва",
             "companyLink": "",
-            "job": "Frontend-разработчик junior",
+            "job": "Frontend-разработчик Angular + ngRx, junior",
             "duty": "New features developing, bugs fixing"
         },
         {
@@ -54,7 +54,23 @@
             "company": "ООО Центр Повышения эффективности",
             "city": "Москва",
             "companyLink": "",
-            "job": "Frontend-разработчик стажер",
+            "job": "Frontend-разработчик Angular + ngRx, стажер",
+            "duty": "New features developing, bugs fixing"
+        },
+        {
+            "year": "сентябрь 2020 - окрябрь 2020",
+            "company": "Не указываю по причине NDA",
+            "city": "Чебоксары",
+            "companyLink": "",
+            "job": "Frontend-разработчик React",
+            "duty": "New features developing, bugs fixing"
+        },
+        {
+            "year": "июль 2020 - август 2020",
+            "company": "Не указываю по причине NDA",
+            "city": "Москва",
+            "companyLink": "",
+            "job": "Frontend-разработчик React",
             "duty": "New features developing, bugs fixing"
         },
         {
@@ -130,7 +146,23 @@
             "duty": "Разработка экранов процесса, экранных форм для SCADA-системы MicroSCADA, разработка приложений для SCADA-системы MicroSCADA, MS Office на встроенном языке программирования SCIL, языках программирования VB, VBA."
         }
     ],
-    "mainScills": ["Опыт программирования на C#, VB, VBA", "HTML5", "CSS3", "JavaScript", "VueJS", "ReactJS", "REDUX", "Angular", "Bootstrap", "LESS, SASS, SCSS", "Git", "SQL", "Gulp, Webpack"],
+    "mainScills": [
+        "Опыт программирования на C#, VB, VBA", 
+        "HTML5", 
+        "CSS3, LESS, SASS, SCSS",
+        "JavaScript", 
+        "ReactJS", 
+        "REDUX", 
+        "Angular, rxJs, ngRx, Angular Material",  
+        "VueJS",
+        "Bootstrap",
+        "Pug",
+        "Git", 
+        "SQL", 
+        "Gulp, Webpack",
+        "PSD/Figma/Zeplin",
+        "Agile/Trello/Jira"
+    ],
     "languages": {
         "russian": "Русский (родной)",
         "english": "Английский (pre-intermidiate)"
@@ -138,6 +170,7 @@
     "car": "Права категории B, опыт вождения с 2008 года. Есть личный автомобиль.",
     "contacts": {
         "phone": "+7 (905) 346-52-75",
+        "telegram": "@OlgaZaglavnova",
         "icq": "195036360",
         "skype": "smirnova.olga.1979",
         "email": "olga.zaglavnova@mail.ru",
@@ -152,105 +185,105 @@
             "fullName": " Python + Django: с нуля до коммерческих приложений",
             "date": "28 мая 2021г.",
             "description": [],
-            "src": "../../../assets/img/sertificates/Udemy_Python-Django_28-05-2021.jpg"
+            "src": "assets/img/sertificates/Udemy_Python-Django_28-05-2021.jpg"
         },
         {
           "school": "Vladilen.ru",
           "fullName": "Angular 9. С нуля до профессионала",
           "date": "29 декабря 2020г.",
           "description": [],
-          "src": "../../../assets/img/sertificates/Angular9_OlgaZaglavnova_29-12-2020.webp"
+          "src": "assets/img/sertificates/Angular9_OlgaZaglavnova_29-12-2020.webp"
       },
         {
            "school": "GeekBrains",
            "fullName": "Frontend developer",
            "date": "30 мая 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/FrontendDeveloper_OlgaZaglavnova.webp"
+           "src": "assets/img/sertificates/FrontendDeveloper_OlgaZaglavnova.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Git. Базовый курс",
            "date": "26 марта 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/GitBase.webp"
+           "src": "assets/img/sertificates/GitBase.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Занимательные элементы интерфейса в HTML/CSS",
            "date": "20 марта 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/InterfaceElementsHTMLCSS.webp"
+           "src": "assets/img/sertificates/InterfaceElementsHTMLCSS.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "ReactJS",
            "date": "4 марта 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/ReactJS.webp"
+           "src": "assets/img/sertificates/ReactJS.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Верстаем landing page на HTML5",
            "date": "10 февраля 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/LandingPage_HTML5.webp"
+           "src": "assets/img/sertificates/LandingPage_HTML5.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Автоматизация с помощью Gulp",
            "date": "14 января 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Gulp.webp"
+           "src": "assets/img/sertificates/Gulp.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Вёрстка сайтов на примере Landing Page",
            "date": "13 января 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/LandingPage.webp"
+           "src": "assets/img/sertificates/LandingPage.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "JavaScript. Уровень 2",
            "date": "10 января 2020г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/JavaScript2.webp"
+           "src": "assets/img/sertificates/JavaScript2.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Основы баз данных",
            "date": "12 декабря 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/DB_base.webp"
+           "src": "assets/img/sertificates/DB_base.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Английский для IT-специалистов",
            "date": "2 декабря 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/EnglishForIT.webp"
+           "src": "assets/img/sertificates/EnglishForIT.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "JavaScript. Уровень 1",
            "date": "18 ноября 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/JavaScript1.webp"
+           "src": "assets/img/sertificates/JavaScript1.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Как стать программистом",
            "date": "22 октября 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/ToBeProgrammer.webp"
+           "src": "assets/img/sertificates/ToBeProgrammer.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "HTML5 и CSS3",
            "date": "19 октября 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/HTML_CSS_2.webp"
+           "src": "assets/img/sertificates/HTML_CSS_2.webp"
        },
        {
            "school": "GeekBrains",
@@ -263,42 +296,42 @@
                "Работа с текстом и таблицами"
            ],
            "date": "3 сентября 2019г.",
-           "src": "../../../assets/img/tests/test_HTML_CSS.webp"
+           "src": "assets/img/tests/test_HTML_CSS.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "HTML/CSS. Интерактивный курс",
            "date": "2 сентября 2019г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/HTML_CSS_1.webp"
+           "src": "assets/img/sertificates/HTML_CSS_1.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Веб-разработка. Быстрый старт",
            "date": "16 августа 2018г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/WebDev_quickStart.webp"
+           "src": "assets/img/sertificates/WebDev_quickStart.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Как создать личный блог: курс 'Создание блога на Wordpress'",
            "date": "26 февраля 2016г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Wordpress.webp"
+           "src": "assets/img/sertificates/Wordpress.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Android. Быстрый старт",
            "date": "17 февраля 2016г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Android.webp"
+           "src": "assets/img/sertificates/Android.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "C#. Викторина 'Угадай мелодию'",
            "date": "26 января 2016г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Csharp_vict.webp"
+           "src": "assets/img/sertificates/Csharp_vict.webp"
        },
        {
            "school": "GeekBrains",
@@ -308,7 +341,7 @@
                "Постановка задачи и алгоритмирование",
                "Базовые понятия"],
            "date": "25 января 2016г.",
-           "src": "../../../assets/img/tests/test_ProgrammingBase.webp"
+           "src": "assets/img/tests/test_ProgrammingBase.webp"
        },
        {
            "school": "GeekBrains",
@@ -320,56 +353,56 @@
               " Классы и объекты",
                "Массивы символы и строки"],
            "date": "25 января 2016г.",
-           "src": "../../../assets/img/tests/test_Csharp.webp"
+           "src": "assets/img/tests/test_Csharp.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Основы программирования",
            "date": "8 декабря 2015г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/ProgrammingBase.webp"
+           "src": "assets/img/sertificates/ProgrammingBase.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "С#. Мини-программы",
            "date": "1 декабря 2015г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Csharp_mini.webp"
+           "src": "assets/img/sertificates/Csharp_mini.webp"
        },
        {
            "school": "GeekBrains",
            "fullName": "Основы ООП",
            "date": "27 ноября 2015г.",
            "description": [],
-           "src": "../../../assets/img/sertificates/Oop_base.webp"
+           "src": "assets/img/sertificates/Oop_base.webp"
        },
         {
             "school": "GeekBrains",
             "fullName": "Git. Быстрый старт",
             "date": "23 ноября 2015г.",
             "description": [],
-            "src": "../../../assets/img/sertificates/Git_quickStart.webp"
+            "src": "assets/img/sertificates/Git_quickStart.webp"
         },
         {
             "school": "GeekBrains",
             "fullName": "PHP. Личный блог",
             "date": "17 ноября 2015г.",
             "description": [],
-            "src": "../../../assets/img/sertificates/Php_blog.webp"
+            "src": "assets/img/sertificates/Php_blog.webp"
         },
         {
             "school": "Школа технологий бизнеса",
             "fullName": "Развитие управленческих компетенций. Инструменты эффективного руководителя",
             "date": "13-14 декабря 2013г.",
             "description": [],
-            "src": "../../../assets/img/sertificates/EffectiveLeader.webp"
+            "src": "assets/img/sertificates/EffectiveLeader.webp"
         },
         {
             "school": "Институт систем качества, г.Екатеринбург",
             "fullName": "Основы СМК и процессный подход в соответствии с ИСО 9001-2008",
             "date": "24 февраля 2011г.",
             "description": [],
-            "src": "../../../assets/img/sertificates/ISO9001.jpg"
+            "src": "assets/img/sertificates/ISO9001.jpg"
         }
     ],
     "portfolio": [
@@ -379,7 +412,7 @@
             "workName": "Верстка страницы",
             "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS1_lesson8",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS1_lesson8",
-            "src":"../../../assets/img/portfolio/HTMLCSS1_ht8.png",
+            "src":"assets/img/portfolio/HTMLCSS1_ht8.png",
             "comment": "Работают пункты меню Home, Products и Products/Home"
         },
         {
@@ -388,7 +421,7 @@
             "workName": "Верстка страницы",
             "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS2_lesson6/",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS2_lesson6",
-            "src":"../../../assets/img/portfolio/HTMLCSS2_ht6.png",
+            "src":"assets/img/portfolio/HTMLCSS2_ht6.png",
             "comment": "При наведении на элементы выполняются эффекты трансформации"
         },
         {
@@ -397,7 +430,7 @@
             "workName": "Верстка страницы",
             "demolink": "https://olgazaglavnova.github.io/OZaglavnova_HTMLCSS2_lesson8/",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/OZaglavnova_HTMLCSS2_lesson8",
-            "src":"../../../assets/img/portfolio/HTMLCSS2_ht8.png",
+            "src":"assets/img/portfolio/HTMLCSS2_ht8.png",
             "comment":"" 
         },
         {
@@ -406,7 +439,7 @@
             "workName": "Анимированное модальное окно",
             "demolink": "https://olgazaglavnova.github.io/hometask5task3/",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task3",
-            "src":"../../../assets/img/portfolio/JS1_ht5t3.png",
+            "src":"assets/img/portfolio/JS1_ht5t3.png",
             "comment": "Нажмите на кнопку 'Открыть модальное окно'"
         },
         {
@@ -415,7 +448,7 @@
             "workName": "Карточки товара",
             "demolink": "https://olgazaglavnova.github.io/hometask5task4/",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task4",
-            "src":"../../../assets/img/portfolio/JS1_ht5t4.png",
+            "src":"assets/img/portfolio/JS1_ht5t4.png",
             "comment": "При нажатии на кнопку 'Подробнее' выводится текстовая информация о товаре, при нажатии на кнопку 'Отмена' возвращается изображение товара"
         },
         {
@@ -424,7 +457,7 @@
             "workName": "Шахматная доска",
             "demolink": "https://olgazaglavnova.github.io/hometask5task5_6/",
             "codelink":"https://github.com/OlgaZaglavnova/OlgaZaglavnova.github.io/tree/master/hometask5task5_6",
-            "src":"../../../assets/img/portfolio/JS1_ht5t6.png",
+            "src":"assets/img/portfolio/JS1_ht5t6.png",
             "comment": "При нажатии на кнопку 'Расставить фигуры' на доске расставляются шахматные фигуры"
         },
         {
@@ -433,7 +466,7 @@
             "workName": "Тестовое приложение для Android, написано на React Native",
             "demolink": "https://yadi.sk/d/tsg7XvOzdtlmrw",
             "codelink":"https://github.com/OlgaZaglavnova/Bokus-Test2",
-            "src":"../../../assets/img/portfolio/bokus2.png",
+            "src":"assets/img/portfolio/bokus2.png",
             "comment": "Для просмотра необходимо скачать файл 'olgazaglavnova-testTwo.apk' на android-телефон и установить приложение."
         }
     ]

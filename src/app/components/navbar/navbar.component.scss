@@ -1,39 +1,33 @@
-.myNavbar{
-    // display: flex;
-    // flex-wrap: nowrap;
-    // justify-content: space-between;
-    // padding: 20px 40px 0px 20px;
-    padding: 0;
-    &-ul{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        & li{
-            padding: 10px 20px;
-            &:hover{
-                background: grey;
-                
-            }
-            & a:hover{
-                color: white;
-            }
-        }
+.myNavbar {
+  padding: 0;
+  &-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & li {
+      padding: 10px 20px;
+      &:hover {
+        background: grey;
+      }
+      & a:hover {
+        color: white;
+      }
     }
-    &-btn{
-        width: 100%;
-        text-align: left;
-        &-text{
-            padding-left: 20px;
-        }
+  }
+  &-btn {
+    width: 100%;
+    text-align: left;
+    &-text {
+      padding-left: 20px;
     }
+  }
 }
 
-@media screen and (max-width: 991px){
-    .myNavbar{
-        position: fixed;
-        top:0px;
-        right: 0px;
-        width: 100%;
-    }
-
+@media screen and (max-width: 991px) {
+  .myNavbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+  }
 }

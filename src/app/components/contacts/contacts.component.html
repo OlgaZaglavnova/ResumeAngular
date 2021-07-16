@@ -1,17 +1,20 @@
 <div class="contacts">
     <div class="contacts_card">
-        <small>Телефон / Viber / WattsApp / Telegram: </small> {{contacts?.phone}}
+        <small>{{ "contacts.Phone" | translate }} / Viber / WhatsApp / Telegram: </small> {{data?.contacts.phone}}
     </div>
     <div class="contacts_card">
-        <small>Email: </small> {{contacts?.email}}
+        <small>Telegram: </small> {{data?.contacts.telegram}}
     </div>
     <div class="contacts_card">
-        <small>Skype: </small> {{contacts?.skype}}
+        <small>Email: </small> {{data?.contacts.email}}
     </div>
     <div class="contacts_card">
-        <small>VK: </small> {{contacts?.vk}}
+        <small>Skype: </small> {{data?.contacts.skype}}
     </div>
     <div class="contacts_card">
-        <small>ICQ: </small> {{contacts?.icq}}
+        <small>VK: </small> {{data?.contacts.vk}}
+    </div>
+    <div class="contacts_card">
+        <small>ICQ: </small> {{data?.contacts.icq}}
     </div>
 </div>

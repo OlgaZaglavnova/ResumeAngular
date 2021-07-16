@@ -1,0 +1,48 @@
+{
+    "header": {
+        "BirthDate": "Birthdate: ",
+        "WishJob": "Job: ",
+        "Experience": "Experience: ",
+        "Workday": "Workday: ",
+        "Schedule": "Schedule:"
+    },
+    "navbar": {
+        "AboutMe": "About me",
+        "Education": "Education",
+        "Experience": "Work experience",
+        "Scills": "Scills",
+        "Sertificates": "Sertificates",
+        "Portfolio": "Portfolio",
+        "Contacts": "Contacts",
+        "PrintVersion": "Print version"
+    },
+    "homePage": {
+        "Welcome": "Welcome to my resume!",
+        "AngularCode": "Code (Angular)",
+        "ResumeReact2020": "Resume made on React + Redux (march 2020), demonstration",
+        "ReactCode": "Code (React)",
+        "UnfortunatelyDNA": "Unfortunately, I cannot cite here all the projects that I have worked on, because I do not own the ownership right to them."
+    },
+    "footer": {
+        "ResumeCreatedBy": "Resume created by using Angular 10."
+    },
+    "aboutMe": {
+        "City": "City:",
+        "Citizen": "Citizen:",
+        "Gender": "Gender:",
+        "AboutMe": "About me:",
+        "Languages": "Languages:",
+        "Car": "Car:"
+    },
+    "education": {
+        "Highest": "Highest",
+        "Additional": "Additional"
+    },
+    "portfolio": {
+        "Demonstration": "Demonstration",
+        "SourceCode": "Source code"
+    },
+    "contacts": {
+        "Phone": "Phone"
+    }
+}

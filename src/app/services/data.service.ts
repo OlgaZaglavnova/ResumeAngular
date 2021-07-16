@@ -1,40 +1,40 @@
-import { Injectable, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Data } from '../models/data.model';
-import { take } from 'rxjs/operators';
-// import * as myData from '../../assets/myData.json';
-// import * as myDataEn from '../../assets/myDataEn.json';
+import { Injectable } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, Subject } from 'rxjs';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root',
+  })
 export class DataService {
     currentLang = 'ru';
-    data: any;
-    printVersionFile = '../../assets//printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf';
-    dataRuFile = '../../assets/myData.json';
-    dataEnFile = '../../assets/myDataEn.json';
+    currentLang$ = new Subject();
+    dataRu: any;
+    dataEn: any;
+    dataRu$: Observable<any>;
+    dataEn$: Observable<any>;
+    dataRuFile = 'assets/myData.json';
+    dataEnFile = 'assets/myDataEn.json';
+    printVersionFileRu = 'assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf';
+    printVersionFileEn = 'assets/printVersion/PrintVersion_OlgaZaglavnova_Resume-En.pdf';
     navBarPage = '';
     constructor(
         private route: ActivatedRoute,
         private http: HttpClient
-    ) { }
+        ){}
 
-    getData(): Observable<any> {
-        const path = this.currentLang === 'ru' ? this.dataRuFile : this.dataEnFile;
-        return this.http.get(path);
+    initData(): void {
+        this.currentLang$.next(this.currentLang);
+        this.dataRu$ = this.http.get(this.dataRuFile);
+        this.dataEn$ = this.http.get(this.dataEnFile);
     }
 
-    updateData(): void {
-        this.printVersionFile = this.currentLang === 'ru' ? '../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume.pdf' : '../../../assets/printVersion/PrintVersion_OlgaZaglavnova_Resume-En.pdf';
-        this.navBarPage = this.getNavBarTitle(this.navBarPage);
-    }
-    getNavBarTitle(selectedPage: string): string {
+    getNavBarTitle(selectedPage: string): string{
         switch (selectedPage) {
-            case 'Обо мне':
+            case 'Обо мне' :
                 return this.currentLang === 'ru' ? 'Обо мне' : 'About me';
                 break;
-            case 'About me':
+            case 'About me' :
                 return this.currentLang === 'ru' ? 'Обо мне' : 'About me';
                 break;
             case 'Образование':
@@ -77,6 +77,6 @@ export class DataService {
                 return selectedPage;
                 break;
 
-        }
+       }
     }
 }

@@ -1,7 +1,7 @@
 <div class="sertificates">
-    <div class="sertificates_card" *ngFor="let sertificate of sertificates; let i = index">
+    <div class="sertificates_card" *ngFor="let sertificate of data?.sertificates; let i = index">
         <a [routerLink]="['/sertificates', i]">
-            <img [src]="sertificate ? sertificate.src : '#'" alt="sertificate image">
+            <img [src]="sertificate?.src" alt="sertificate image">
             <div class="sertificates_card--school">
                 {{sertificate?.school}}
             </div>
